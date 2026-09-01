@@ -9,6 +9,8 @@ __pycache__/
 # my folders
 attachments/
 screenshots/
+assets/
+report.html
 
 # Distribution / packaging
 .Python

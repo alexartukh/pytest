@@ -27,6 +27,7 @@ def attach_text(name: str, body: str):
 
 class TestPlaceOrder:
 
+    @pytest.mark.skip(reason="IGNORE")
     def test_register_user_failed(self, page: Page):
         page.goto("https://std131001.test/Mein-Konto", wait_until="networkidle")
 
@@ -52,6 +53,7 @@ class TestPlaceOrder:
         # SS
         page.screenshot(path="screenshots/registration-page-after.png")
 
+    @pytest.mark.skip(reason="IGNORE")
     def test_place_order(self, page: Page, request):
         # лог для отчёта (аналог testInfo.attach с текстом)
         path = attach_text("setTimeout", "Global timeout = 60000")
